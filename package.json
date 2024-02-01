@@ -44,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/thin-backend": "https://thin.dev/types/861530ab-cdac-4b34-b6e0-d238c108720a/GXEXMisGcLIVBDaNCRKJZNWsbqRMnbfj"
   }
 }

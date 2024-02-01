@@ -10,13 +10,13 @@ import { Box, ChakraBaseProvider, ChakraProvider } from '@chakra-ui/react';
 function App() {
   var display = {a: <StockApp />, b: <Tanga />, c: <Music />}
   return (
+
     <ChakraProvider>
-      
       <Box className="App" width={"100%"}>
         {display.b}
       </Box>
-      
     </ChakraProvider>
+
   );
 }
 

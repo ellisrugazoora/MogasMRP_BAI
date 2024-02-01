@@ -1,5 +1,5 @@
 import React from 'react';
-//import './App.css';
+import './App.css';
 
 // import Tanga from './Components/Tanga/Tanga';
 // import StockApp from "./Components/StockApp";

@@ -1,13 +1,13 @@
 import React from 'react';
 //import './App.css';
 
-import Tanga from './Components/Tanga/Tanga';
-import StockApp from "./Components/StockApp";
-import Music from './Components/Music/Music';
+// import Tanga from './Components/Tanga/Tanga';
+// import StockApp from "./Components/StockApp";
+// import Music from './Components/Music/Music';
 
 import { Box, ChakraBaseProvider, ChakraProvider } from '@chakra-ui/react';
 import { ThinBackend } from 'thin-backend-react';
-import { initThinBackend } from 'thin-backend';
+import { initThinBackend, logout } from 'thin-backend';
 
 initThinBackend({
   // This url is different for each backend, this one points to 'mogas-mrp-bai'
@@ -31,10 +31,11 @@ function App() {
   // var display = {a: <StockApp />, b: <Tanga />, c: <Music />}
   return (
   <ThinBackend requireLogin>
+    <div className='container'>
+      <UserStatus />
+    </div>
     {/* <ChakraProvider>
-      <div className='container'>
-        <UserStatus />
-      </div>
+      
       {/* <Box className="App" width={"100%"}>
         {display.b}
       </Box>
